@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>AI B2B Proposal Generator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI B2B Proposal Generator</h1>
+
+<form method="POST">
+
+<input type="text" name="company" placeholder="Company Name" required>
+
+<input type="text" name="industry" placeholder="Industry" required>
+
+<input type="number" name="budget" placeholder="Budget" required>
+
+<button type="submit">Generate Proposal</button>
+
+</form>
+
+{% if text_result %}
+
+<div class="result">
+
+<h2>Generated Proposal</h2>
+
+<pre>{{text_result}}</pre>
+
+<h2>JSON Output</h2>
+
+<pre>{{json_result}}</pre>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
