@@ -45,6 +45,17 @@ python app.py
 ```
 http://127.0.0.1:5000
 ```
+## Example Input (Test the Generator)
+
+Enter the following details in the web interface:
+
+Company Name: ABC Tech Solutions  
+Industry: Information Technology  
+Budget: $5000  
+
+Then click **Generate Proposal**
+
+The system will automatically generate a professional B2B proposal based on the provided information.
 
 ## Author
 Shrikant Kumar
